@@ -2,7 +2,7 @@ var express = require("express");
 var path = require("path");
 var fs = require('fs')
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var db = require("./db/db.json")
 
 app.use(express.urlencoded({extended:true})) 
